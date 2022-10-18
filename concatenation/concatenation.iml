@@ -1,0 +1,22 @@
+class Persoana {
+    public String nume;
+    public Persoana(String nume) {
+        this.nume = nume;
+        System.out.println("Persoana(String)");
+    }
+    public Persoana() {
+        this.nume = "Max";
+        System.out.println("Persoana()");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Persoana a = new Persoana("Matei"), b = a;
+        if (a == b) {
+            System.out.println("Aceeasi persoana");
+        } else {
+            System.out.println("Persoane diferite");
+        }
+    }
+}
